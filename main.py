@@ -11,7 +11,7 @@ while on:
     print(" > SIGN IN         (1)")
     print(" > CREATE ACCOUNT  (2)")
     print(" > EXIT            (3)")
-    welcome = int(input("What do you want to do? "))
+    welcome = int(input("What do you want to do? >  "))
     if welcome == 1:
         while not access:
             print(" ---------SIGN-IN----------")
@@ -95,6 +95,7 @@ while on:
         print(f"Welcome to Elite Banking {name} !")
     elif welcome == 3:
         on = False
+
 print("\nThank you for choosing Elite Banking! We hope to see you again!")
 
 

@@ -1,17 +1,5 @@
 import sqlite3
 
-# conn = sqlite3.connect('db/db.db')
-
-# c = conn.cursor()
-
-# c.execute("SELECT pin FROM accounts WHERE fullName = 'Sid Venkatayogi'")
-# # c.fetchone()
-# # c.fetchmany()
-# print(c.fetchone())
-
-# conn.commit()
-# conn.close()
-
 def getAcc(name, pin):
     conn = sqlite3.connect('db/db.db')
 
@@ -30,6 +18,7 @@ def createAcc(name, pin, email, deposit):
 
     conn.commit()
     conn.close()
+
 def closeAcc(acc):
     conn = sqlite3.connect('db/db.db')
     c = conn.cursor()
